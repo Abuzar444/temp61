@@ -1,5 +1,5 @@
 import React from 'react';
-import TourInfo from '../../../components/TourInfo';
+import TourInfo from '../../../components/Tourinfo';
 import { getSingleTour } from '../../../../utils/action';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -16,10 +16,10 @@ const SingleTourPage = async ({ params }) => {
 	}
 	//Here I'm using the Unsplash API to get an image of the city
 	const { data } = await axios(`${url}${tour.city}`, {
-		headers:{
+		headers: {
 			Authorization: `Client-ID ${process.env.UNSPLASH_SECRET_API_KEY}`
 		},
-		
+
 	});
 	const tourImage = data?.results[0]?.urls?.full;
 
