@@ -9,7 +9,7 @@ import {
 	subtractTokens,
 	getUserFromClerk,
 } from '../../utils/action';
-import TourInfo from './TourInfo';
+import TourInfo from './Tourinfo';
 import { toast } from 'react-hot-toast';
 
 const NewTour = () => {
